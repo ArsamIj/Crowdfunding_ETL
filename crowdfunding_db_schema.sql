@@ -1,4 +1,11 @@
-﻿
+﻿--Project 2
+--Extract Transform Load
+
+DROP TABLE IF EXISTS campaign;
+DROP TABLE IF EXISTS category;
+DROP TABLE IF EXISTS contacts;
+DROP TABLE IF EXISTS subcategory;
+
 CREATE TABLE "campaign" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
@@ -55,3 +62,7 @@ ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("
 REFERENCES "subcategory" ("subcategory_id");
 
 SELECT * FROM "campaign"
+SELECT * FROM "category"
+SELECT * FROM "contacts"
+SELECT * FROM "subcategory"
+
